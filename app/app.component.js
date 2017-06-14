@@ -9,23 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var todos = [
-    {
-        title: 'Learn JavaScript',
-        completed: true
-    },
-    {
-        title: 'Learn Angular 2',
-        completed: false
-    },
-    { title: 'Make an application',
-        completed: false
-    }
-];
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Angular 2Do';
-        this.todos = todos;
     }
     AppComponent = __decorate([
         core_1.Component({
