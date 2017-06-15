@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { Todo } from '../shared/todo';
 import { todos } from '../shared/data';
@@ -11,7 +11,7 @@ import { todos } from '../shared/data';
 })
 
 export class TodoListComponent {
-	todos: Todo[] = todos;
+	@Input() todos: Todo[];
 		
 
 		toggle(todo: Todo){
@@ -19,6 +19,7 @@ export class TodoListComponent {
 		}
 
 		delete(todo: Todo){
+			console.log('delete');
 			let index = this.todos.indexOf(todo);
 
 			if(index > -1){
